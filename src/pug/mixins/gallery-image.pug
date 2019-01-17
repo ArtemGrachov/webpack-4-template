@@ -1,0 +1,5 @@
+mixin galleryImage(title, imgUrl)
+  li.gallery__item
+    .gallery__pic
+      img.gallery__img(src=require(imgUrl))
+    .gallery__title #{title}

@@ -1,0 +1,9 @@
+extends ../../pug/templates/common.pug
+include ../../pug/mixins/product.pug
+block variables
+  - var title = "Catalog | Gallery"
+block content
+  div gallery page
+  include ./categories.pug
+  include ./images.pug
+  include ../../pug/blocks/pagination.pug

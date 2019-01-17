@@ -1,0 +1,8 @@
+extends ../../pug/templates/common.pug
+include ../../pug/mixins/product.pug
+block variables
+  - var title = "Catalog | About us"
+block content
+  div about-us page
+  include ./about.pug
+  include ./form.pug

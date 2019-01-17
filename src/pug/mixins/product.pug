@@ -1,0 +1,7 @@
+mixin product(name, price, imgUrl)
+  li.product__item
+    .product__pic
+      img.product__img(src=imgUrl alt=name)
+    .product__meta
+      .product__name #{name}
+      .product__price #{price}
