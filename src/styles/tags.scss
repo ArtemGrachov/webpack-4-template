@@ -14,3 +14,11 @@ h5,
 h6 {
   border-bottom: 4px solid $yellow;
 }
+
+a {
+  color: green;
+  font-weight: bold;
+  &:hover {
+    color: orange;
+  }
+}

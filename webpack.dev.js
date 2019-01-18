@@ -1,5 +1,6 @@
 const
   path = require('path'),
+  webpack = require('webpack'),
   merge = require('webpack-merge'),
   commonConfig = require('./webpack.common');
 
@@ -11,7 +12,9 @@ module.exports = (env, argv) => {
       devServer: {
         contentBase: path.join(__dirname, 'dist'),
         port: 8080,
-        stats: 'minimal'
+        stats: 'minimal',
+        open: true,
       },
+      watch: true
     })
 }
