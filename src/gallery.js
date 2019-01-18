@@ -1,1 +1,1 @@
-console.log('only for gallery page')
+console.log("only for gallery page 111");

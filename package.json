@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "homepage": "https://github.com/ArtemGrachov/webpack-4-template",
   "scripts": {
-    "dev": "webpack --mode development --watch",
-    "build": "webpack --mode development",
-    "prod": "webpack --mode production"
+    "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
+    "prod": "webpack --config ./webpack.prod.js --mode production"
   },
-  "author": "",
+  "author": {
+    "name": "Artem Grachov",
+    "email": "grachov2195@gmail.com",
+    "url": "https://github.com/ArtemGrachov/"
+  },
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.3.1",
@@ -19,7 +23,10 @@
     "@babel/core": "^7.2.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.5",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.1.0",
     "extract-loader": "^3.1.0",
@@ -28,12 +35,16 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.15.3",
     "pug": "^2.0.3",
     "pug-html-loader": "^1.1.5",
     "pug-loader": "^2.4.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack-cli": "^3.2.1",
-    "webpack-merge": "^4.2.1"
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1",
+    "webpack-stylish": "^0.1.8"
   }
 }

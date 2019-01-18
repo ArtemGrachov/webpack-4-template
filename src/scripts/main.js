@@ -1,1 +1,3 @@
-console.log('Hello, world!')
+console.log("Hello, world!");
+let someVariable = Math.random();
+console.log(someVariable);
