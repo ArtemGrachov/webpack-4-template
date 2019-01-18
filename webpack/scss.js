@@ -6,7 +6,7 @@ module.exports = mode => {
   return {
     test: /\.scss$/,
     use: [
-      mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+      MiniCssExtractPlugin.loader,
       'css-loader',
       {
         loader: 'postcss-loader',
