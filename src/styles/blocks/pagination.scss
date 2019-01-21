@@ -1,0 +1,22 @@
+@import '../common.scss';
+
+.pagination {
+  @extend %list;
+  margin: 20px 0;
+  text-align: center;
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__link,
+  &__current {
+    display: block;
+    padding: 5px 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

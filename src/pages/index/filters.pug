@@ -1,1 +1,15 @@
-div filters
+.filters
+  label.filters__label(for="producer") Producer:
+  select.filters__select(id="producer")
+    option.filters__option Acer
+    option.filters__option Apple
+    option.filters__option Lenovo
+    option.filters__option HP
+  label.filters__label(for="price") Price:
+  select.filters__select(id="price")
+    option.filters__option < 10000
+    option.filters__option 10000 - 20000
+    option.filters__option 20000 - 30000
+    option.filters__option 30000 - 40000
+    option.filters__option 40000 - 50000
+    option.filters__option > 50000

@@ -1,0 +1,9 @@
+.socials {
+  @extend %list;
+  display: flex;
+
+  &__link {
+    display: block;
+    padding: 10px;
+  }
+}

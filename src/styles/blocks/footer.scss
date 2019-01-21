@@ -1,0 +1,15 @@
+.footer {
+  background: $yellow;
+  border-top: 4px solid $darkerYellow;
+  padding: 10px 0;
+  flex: 0 0 auto;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-left {
+    font-weight: bold;
+  }
+}

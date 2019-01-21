@@ -12,8 +12,8 @@ const
 module.exports = mode => {
   return {
     entry: {
-      main: path.resolve(__dirname, 'src/main.js'),
       libs: path.resolve(__dirname, 'src/libs.js'),
+      main: path.resolve(__dirname, 'src/main.js'),
       gallery: path.resolve(__dirname, 'src/gallery.js')
     },
     output: {

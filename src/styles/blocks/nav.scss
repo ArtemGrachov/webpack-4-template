@@ -1,0 +1,18 @@
+.nav {
+  &__list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &:hover {
+      background: rgba(black, .1);
+      color: black;
+    }
+  }
+}

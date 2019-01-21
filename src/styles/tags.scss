@@ -1,9 +1,18 @@
-@import "./variables.scss";
+@import './variables.scss';
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans';
 }
 
 h1,
@@ -13,12 +22,29 @@ h4,
 h5,
 h6 {
   border-bottom: 4px solid $yellow;
+  margin-top: 0;
 }
 
 a {
-  color: green;
+  color: black;
   font-weight: bold;
+  transition: $transition;
+
   &:hover {
-    color: orange;
+    color: rgba(black, .5);
+    text-decoration: none;
   }
+}
+
+select {
+  width: 250px;
+  padding: 5px 10px;
+  border: 1px solid rgba(black, .15);
+  border-radius: 3px;
+}
+
+label {
+  color: lighten(black, 35);
+  font-weight: bold;
+  display: block;
 }
