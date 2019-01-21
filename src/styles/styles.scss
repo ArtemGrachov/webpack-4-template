@@ -16,4 +16,43 @@
 
 .main-container {
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.margin {
+  $marginNormal: 20px;
+  $marginSmall: 10px;
+  $marginLarge: 30px;
+
+  &-bottom {
+    margin-bottom: $marginNormal;
+
+    &-small {
+      margin-bottom: $marginSmall;
+    }
+
+    &-large {
+      margin-bottom: $marginLarge;
+    }
+  }
+
+  &-right {
+    margin-right: $marginNormal;
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &0bold {
+    text-align: bold;
+  }
 }

@@ -1,1 +1,9 @@
-form form block
+form.about-form
+  .about-form__title.title.text-center.margin-bottom Contact us
+  label.about-form__label.margin-bottom-small(for="name") Name
+  input.about-form__input.margin-bottom(type="text" id="name" name="name" placeholder="Your name" required)
+  label.about-form__label.margin-bottom-small(for="emaul") Email
+  input.about-form__input.margin-bottom(type="text" id="email" name="email" placeholder="abcd@email.com" required)
+  label.about-form__label.margin-bottom-small(for="feedback") Feedback
+  textarea.about-form__input.margin-bottom(name="feedback" id="feedback" rows="10" required)
+  button Send

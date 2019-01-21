@@ -13,6 +13,7 @@ body {
 
 body {
   font-family: 'Open Sans';
+  line-height: 1.42;
 }
 
 h1,
@@ -36,15 +37,50 @@ a {
   }
 }
 
-select {
-  width: 250px;
-  padding: 5px 10px;
-  border: 1px solid rgba(black, .15);
-  border-radius: 3px;
+select,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(black, .1);
+  border-radius: $borderRadius;
+  transition: $transition;
+
+  &:focus {
+    outline: none;
+    border-color: rgba(black, .2);
+  }
 }
 
 label {
   color: lighten(black, 35);
   font-weight: bold;
   display: block;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+button,
+.button {
+  background: black;
+  color: $yellow;
+  padding: 10px 20px;
+  min-width: 150px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: $transition;
+  border-radius: $borderRadius;
+
+  &:hover {
+    background: rgba(black, .75);
+  }
 }
