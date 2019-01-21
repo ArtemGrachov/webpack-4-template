@@ -1,1 +1,1 @@
-console.log("only for gallery page 111");
+console.log('This message appers only in gallery bundle');

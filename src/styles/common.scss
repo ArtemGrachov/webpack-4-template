@@ -11,3 +11,39 @@
   padding: 0;
   list-style: none;
 }
+
+$marginNormal: 20px;
+$marginSmall: 10px;
+$marginLarge: 30px;
+
+%margin {
+
+  &-bottom {
+    margin-bottom: $marginNormal;
+
+    &-small {
+      margin-bottom: $marginSmall;
+    }
+
+    &-large {
+      margin-bottom: $marginLarge;
+    }
+  }
+
+  &-left {
+    margin-left: $marginNormal;
+  }
+
+  &-right {
+    margin-right: $marginNormal;
+  }
+
+  &-horizontal {
+    @extend %margin-right;
+    @extend %margin-left;
+  }
+}
+
+%shadow {
+  box-shadow: 0 4px 4px 0 rgba(black, .075);
+}

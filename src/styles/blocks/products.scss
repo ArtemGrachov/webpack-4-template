@@ -6,20 +6,19 @@
   flex-wrap: wrap;
   align-items: stretch;
 
-  $margin: 15px;
-
   &__item {
+    @extend %margin-bottom-large;
     flex-grow: 0;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: calc(100% / 3);
-    margin: 0 0 ($margin * 3);
     padding: 15px;
+    transition: $transition;
 
     &:hover {
-      box-shadow: 0 10px 10px 0 rgba(black, .1);
+      @extend %shadow;
     }
   }
 

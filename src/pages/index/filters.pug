@@ -1,12 +1,16 @@
 .filters.margin-bottom
   label.filters__label.margin-right(for="producer") Producer:
   select.filters__select.margin-right(id="producer")
+    option(disabled selected).filters__option - Select producer -
+    option.filters__option - All -
     option.filters__option Acer
     option.filters__option Apple
     option.filters__option Lenovo
     option.filters__option HP
   label.filters__label.margin-right(for="price") Price:
   select.filters__select(id="price")
+    option(disabled selected).filters__option - Select price -
+    option.filters__option - All -
     option.filters__option < 10000
     option.filters__option 10000 - 20000
     option.filters__option 20000 - 30000

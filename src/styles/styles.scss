@@ -26,24 +26,20 @@
 }
 
 .margin {
-  $marginNormal: 20px;
-  $marginSmall: 10px;
-  $marginLarge: 30px;
-
   &-bottom {
-    margin-bottom: $marginNormal;
+    @extend %margin-bottom;
 
     &-small {
-      margin-bottom: $marginSmall;
+      @extend %margin-bottom-small;
     }
 
     &-large {
-      margin-bottom: $marginLarge;
+      @extend %margin-bottom-large;
     }
   }
 
   &-right {
-    margin-right: $marginNormal;
+    @extend %margin-right;
   }
 }
 
