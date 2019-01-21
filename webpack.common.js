@@ -1,4 +1,5 @@
 const
+  webpack = require('webpack'),
   path = require('path'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin'),
@@ -12,9 +13,19 @@ const
 module.exports = mode => {
   return {
     entry: {
-      libs: path.resolve(__dirname, 'src/libs.js'),
       main: path.resolve(__dirname, 'src/main.js'),
       gallery: path.resolve(__dirname, 'src/gallery.js')
+    },
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        name: 'libs',
+        cacheGroups: {
+          vendors: {
+            test: /node_modules/
+          }
+        }
+      }
     },
     output: {
       filename: '[name].bundle.js',
@@ -48,7 +59,7 @@ module.exports = mode => {
         filename: 'about-us.html',
         chunks: ['main', 'libs']
       }),
-      new WebpackStylish()
+      new WebpackStylish(),
     ],
     stats: {
       children: false
